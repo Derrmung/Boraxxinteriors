@@ -1,0 +1,955 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    /* min-height: 100vh; */
+    /* padding-left: 8%; */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    color:fuchsia;
+    text-decoration: underline;
+   
+}
+.shop-el{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* background: linear-gradient(to right,fuchsia, purple); */
+    border-radius: 10px;
+    /* border: none; */
+    cursor: pointer;
+    background-color: white;
+}
+.shop-el:hover{
+    background: linear-gradient(to right,fuchsia, purple);
+
+}
+/* here i begin the col-1 styling */
+.col-1{
+    align-items: center;
+    position: relative;
+}
+.homeimage{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+
+}
+.col-1 h1{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    color:white ;
+    /* background: linear-gradient(rgba(8, 0, 8, 0.223), #0e000105); */
+    width: 95%;
+    padding: 20px;
+    font-size: 50px;
+}
+.col-1 p{
+    position: absolute;
+    top: 46%;
+    text-align: center;
+    width: 95%;
+    color: white;
+
+}
+.col-1 h2{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 95%;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+    font-size: 20px;
+
+}
+.links a:hover{
+    color: rgba(247, 5, 206, 0.999);
+}
+#furniture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 250px; */
+}
+.furniture-gallery{
+    width: 1200px;
+}
+
+.furniture-gallery img{
+    width: 300px;
+
+}
+#ceiling{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 250px; */
+}
+.ceiling{
+    width: 1200px;
+}
+
+.ceiling img{
+    width: 300px;
+
+}
+#Soft-Furnishing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 250px; */
+}
+.Soft-Furnishing{
+    width: 1200px;
+}
+
+.Soft-Furnishing img{
+    width: 300px;
+
+}
+#floors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 250px; */
+}
+.floors{
+    width: 1200px;
+}
+
+.floors img{
+    width: 300px;
+
+}
+#paintWorks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 250px; */
+}
+.paintWorks{
+    width: 1200px;
+}
+
+.paintWorks img{
+    width: 300px;
+
+}
+#lighting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 250px; */
+}
+.lighting{
+    width: 1200px;
+}
+
+.lighting img{
+    width: 300px;
+
+}
+#decos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 250px; */
+}
+.decos{
+    width: 1200px;
+}
+
+.decos img{
+    width: 300px;
+
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+
+}
+.footer .box1{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.footer .box2{
+    border: 10px fuchsia solid;
+    width: 400px;
+    padding:15px 15px;
+    /* margin-left: 100px; */
+}
+.footer .box2 button{
+    border: none;
+    background-color: #000;
+    color:white;
+    padding-left:30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 15px ; 
+    /* shorthand for margin we begin with (top&botom) --right and left */
+
+}
+.footer .box2 img{
+    width: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.top-links{
+    background-color: antiquewhite;
+   
+}
+.top-links p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.top-links p a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:black;
+    margin-top: 10px;
+}
+.top-links p a:hover{
+    color: fuchsia;
+}
+
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgba(167, 28, 170, 0.93), #0e000105);
+        position:absolute;
+        top:130px;
+        right: 10px;
+        /* left: 10px; */
+        z-index: 2;
+        /* margin-left: 10PX; */
+    }
+    nav ul li{
+        display: block;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* background: none; */
+    }
+    nav ul li a:hover{
+        color:#000;
+    }
+    .menu-icon{
+        display:block;
+        /* margin-right: 10px; */
+        
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .homeimage{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .col-1 h1{
+        top:70px;
+        font-size: 40px;
+        color: white;
+    }
+    .links{
+        text-align: center;
+    }
+    #furniture{
+        /* display: grid; */
+        justify-content: center;
+    }
+    .furniture-gallery {
+          /* margin-left: 20px; */
+    }
+    /* .furniture-gallery .beds{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .dinning{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .sofas{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .tv-place{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .ceil{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .curtains{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .nets{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .pillows{
+        display: grid;
+        justify-content: center;  
+    }
+    .floors .floors{
+        display: grid;
+        justify-content: center;  
+    }
+    .paintWorks {
+        display: grid;
+        justify-content: center;  
+    }
+    .lighting {
+        display: grid;
+        justify-content: center;  
+    }
+    .decos {
+        display: grid;
+        justify-content: center;  
+    } */
+
+
+    /* .furniture-gallery img{
+        width: 350px; 
+        margin-bottom: 5px;
+
+    }
+    .ceiling img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .Soft-Furnishing img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .floors img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .paintWorks img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .lighting img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .decos img{
+        width: 350px; 
+        margin-bottom: 5px;
+    } */
+    .footer .box1{
+        margin-bottom: 20px;
+    }
+    .footer .box2{
+        width: 250px;
+    }
+   
+   
+    
+
+}
+@media only screen and (max-width:600px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgba(167, 28, 170, 0.93), #0e000105);
+        position:absolute;
+        top:130px;
+        right: 10px;
+        /* left: 10px; */
+        z-index: 2;
+        /* margin-left: 10PX; */
+    }
+    nav ul li{
+        display: block;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* background: none; */
+    }
+    nav ul li a:hover{
+        color:#000;
+    }
+    .menu-icon{
+        display:block;
+        /* margin-right: 10px; */
+        
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .homeimage{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .col-1 h1{
+        top:70px;
+        font-size: 40px;
+        color: white;
+    }
+    .links{
+        text-align: center;
+    }
+    .furniture-gallery .beds{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .dinning{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .sofas{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .tv-place{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .ceil{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .curtains{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .nets{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .pillows{
+        display: grid;
+        justify-content: center;  
+    }
+    .floors .floors{
+        display: grid;
+        justify-content: center;  
+    }
+    .paintWorks {
+        display: grid;
+        justify-content: center;  
+    }
+    .lighting {
+        display: grid;
+        justify-content: center;  
+    }
+    .decos {
+        display: grid;
+        justify-content: center;  
+    }
+
+
+    .furniture-gallery img{
+        width: 350px; 
+        margin-bottom: 5px;
+
+    }
+    .ceiling img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .Soft-Furnishing img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .floors img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .paintWorks img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .lighting img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .decos img{
+        width: 350px; 
+        margin-bottom: 5px;
+    }
+    .footer .box1{
+        margin-bottom: 20px;
+    }
+    .footer .box2{
+        width: 250px;
+    }
+   
+   
+    
+
+}
+
+@media only screen and (max-width:500px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgba(167, 28, 170, 0.93), #0e000105);
+        position:absolute;
+        top:130px;
+        right: 10px;
+        /* left: 10px; */
+        z-index: 2;
+        /* margin-left: 10PX; */
+    }
+    nav ul li{
+        display: block;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* background: none; */
+    }
+    nav ul li a:hover{
+        color:#000;
+    }
+    .menu-icon{
+        display:block;
+        /* margin-right: 10px; */
+        
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .homeimage{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .col-1 h1{
+        top:70px;
+        font-size: 40px;
+        color: white;
+    }
+    .furniture-gallery .beds{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .dinning{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .sofas{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .tv-place{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .ceil{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .curtains{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .nets{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .pillows{
+        display: grid;
+        justify-content: center;  
+    }
+    .floors .floors{
+        display: grid;
+        justify-content: center;  
+    }
+    .paintWorks {
+        display: grid;
+        justify-content: center;  
+    }
+    .lighting {
+        display: grid;
+        justify-content: center;  
+    }
+    .decos {
+        display: grid;
+        justify-content: center;  
+    }
+
+
+    .furniture-gallery img{
+        width: 300px; 
+        margin-bottom: 5px;
+
+    }
+    .ceiling img{
+        width: 300px; 
+        margin-bottom: 5px;
+    }
+    .Soft-Furnishing img{
+        width: 300px; 
+        margin-bottom: 5px;
+    }
+    .floors img{
+        width: 300px; 
+        margin-bottom: 5px;
+    }
+    .paintWorks img{
+        width: 300px; 
+        margin-bottom: 5px;
+    }
+    .lighting img{
+        width: 300px; 
+        margin-bottom: 5px;
+    }
+    .decos img{
+        width: 300px; 
+        margin-bottom: 5px;
+    }
+    .footer .box1{
+        margin-bottom: 20px;
+    }
+    .footer .box2{
+        width: 250px;
+    }
+   
+   
+    
+
+}
+
+@media only screen and (max-width:400px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgba(167, 28, 170, 0.93), #0e000105);
+        position:absolute;
+        top:130px;
+        right: 10px;
+        /* left: 10px; */
+        z-index: 2;
+        /* margin-left: 10PX; */
+    }
+    nav ul li{
+        display: block;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* background: none; */
+    }
+    nav ul li a:hover{
+        color:#000;
+    }
+    .menu-icon{
+        display:block;
+        /* margin-right: 10px; */
+        
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .homeimage{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .col-1 h1{
+        top:70px;
+        font-size: 40px;
+        color: white;
+    }
+    .furniture-gallery .beds{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .dinning{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .sofas{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .tv-place{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .ceil{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .curtains{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .nets{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .pillows{
+        display: grid;
+        justify-content: center;  
+    }
+    .floors .floors{
+        display: grid;
+        justify-content: center;  
+    }
+    .paintWorks {
+        display: grid;
+        justify-content: center;  
+    }
+    .lighting {
+        display: grid;
+        justify-content: center;  
+    }
+    .decos {
+        display: grid;
+        justify-content: center;  
+    }
+
+
+    .furniture-gallery img{
+        width: 250px; 
+        margin-bottom: 5px;
+
+    }
+    .ceiling img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .Soft-Furnishing img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .floors img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .paintWorks img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .lighting img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .decos img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .footer .box1{
+        margin-bottom: 20px;
+    }
+    .footer .box2{
+        width: 250px;
+    }
+   
+   
+    
+
+}
+
+@media only screen and (max-width:300px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgba(167, 28, 170, 0.93), #0e000105);
+        position:absolute;
+        top:130px;
+        right: 10px;
+        /* left: 10px; */
+        z-index: 2;
+        /* margin-left: 10PX; */
+    }
+    nav ul li{
+        display: block;
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color:black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* background: none; */
+    }
+    nav ul li a:hover{
+        color:#000;
+    }
+    .menu-icon{
+        display:block;
+        /* margin-right: 10px; */
+        
+    }
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .homeimage{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .col-1 h1{
+        top:70px;
+        font-size: 40px;
+        color: white;
+    }
+    .furniture-gallery .beds{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .dinning{
+        display: grid;
+        justify-content: center;  
+    }
+    .furniture-gallery .sofas{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .tv-place{
+        display: grid;
+        justify-content: center;  
+    }
+    .ceiling .ceil{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .curtains{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .nets{
+        display: grid;
+        justify-content: center;  
+    }
+    .Soft-Furnishing .pillows{
+        display: grid;
+        justify-content: center;  
+    }
+    .floors .floors{
+        display: grid;
+        justify-content: center;  
+    }
+    .paintWorks {
+        display: grid;
+        justify-content: center;  
+    }
+    .lighting {
+        display: grid;
+        justify-content: center;  
+    }
+    .decos {
+        display: grid;
+        justify-content: center;  
+    }
+
+
+    .furniture-gallery img{
+        width: 250px; 
+        margin-bottom: 5px;
+
+    }
+    .ceiling img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .Soft-Furnishing img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .floors img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .paintWorks img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .lighting img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .decos img{
+        width: 250px; 
+        margin-bottom: 5px;
+    }
+    .footer .box1{
+        margin-bottom: 20px;
+    }
+    .footer .box2{
+        width: 250px;
+    }
+   
+   
+    
+
+}
+
+
+    
+    
